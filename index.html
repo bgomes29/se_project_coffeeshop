@@ -33,7 +33,7 @@
               <a href="#menu" class="nav__link">Menu</a>
             </li>
             <li>
-              <a href="#contacts" class="nav__link">Contacts</a>
+              <a href="#footer" class="nav__link">Contacts</a>
             </li>
         </ul>
         </nav>
@@ -46,11 +46,11 @@
             />
         <div class="header__footer">
             <div>
-            <p class="header__paragraphs">Hours:</p>
-            <p class="header__paragraphs">Monday-Friday (10:00-19:00)</p>
-            <p class="header__paragraphs">Saturday-Sunday (11:00-18:00)</p>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday-Friday (10:00-19:00)</p>
+            <p class="header__paragraph">Saturday-Sunday (11:00-18:00)</p>
             </div>
-            <p class="header__paragraphs">200 Success Avenue, The Town of Triple Peaks</p>
+            <p class="header__paragraph">200 Success Avenue, The Town of Triple Peaks</p>
         </div>
         </header>
 
@@ -65,13 +65,13 @@
                 <iframe 
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=XPtQL-dvwa9ahPq8" 
                 class="recipes__iframe"></iframe>
-                <p class="recipes__video-caption"><span>Aeropress recipe ~5 min</span></p>
+                <p class="recipes__video-caption"><span>Aeropress recipe</span> <span>~5 min</span></p>
                 </div>
                 <div>
                 <iframe 
             src="https://www.youtube.com/embed/st571DYYTR8?si=2IxZpf5YlggCf1Ev" 
             class="recipes__iframe"></iframe>
-            <p class="recipes__video-caption"><span> French Press recipe ~15 min</span></p>
+            <p class="recipes__video-caption"><span> French Press recipe</span> <span>~15 min</span></p>
             </div>
             </div>
         </section>
@@ -82,24 +82,28 @@
                     <label class="form__label">
                         Name *<input type="text" 
                         class="form__input"
-                        placeholder="Name Surname">
+                        placeholder="Name Surname"
+                        required="true">
                     </label>
                     <label class="form__label">
                         Number of guests *<input type="number" 
                         class="form__input"
-                        placeholder="1-8">
+                        placeholder="1-8"
+                        required="true">
                     </label>
                     <label class="form__label">
                         Date & time *<input type="datetime-local" 
-                        class="form__input">
+                        class="form__input"
+                        required="true">
                     </label>
                     <label class="form__label">
                         Your email *<input type="email" 
                         class="form__input"
-                        placeholder="email@email.com">
+                        placeholder="email@email.com"
+                        required="true">
                     </label>
                 </fieldset>
-                <button class="form__button">Book a table</button>
+                <button class="form__button" type="submit">Book a table</button>
                 <label class=" form__label form__label_type_checkbox">
                     <input type="checkbox" class="form__checkbox">
                     I agree with terms of use
@@ -189,21 +193,20 @@
         </main>
     <footer id="footer" class="footer">
         <div class="footer__content">
-                <div class="footer__logo">
-                    <img src="images/logo_coffeeshop_light.svg" 
-                    alt="coffeeshop logo">
-                </div>
+                <img src="images/logo_coffeeshop_light.svg" 
+                    alt="coffeeshop logo"
+                    class="footer__logo">
                 <div class="footer__column">
                     <h3 class="footer__social-heading">Social Media</h3>
             <ul class="footer__list">
-                <li class="footer_list-item">
+                <li class="footer__list-item">
                     <img src="images/facebook_white.svg" 
                     alt="facebook logo" 
                     class="footer__social-icon">
                     <a href="#contacts" 
                     class="footer__social-link">Facebook</a>
                 </li>
-                <li class="footer_list-item">
+                <li class="footer__list-item">
                     <img src="images/instagram_white.svg" 
                     alt="instagram logo" 
                     class="footer__social-icon">
@@ -213,9 +216,8 @@
             </ul>
             </div>
             </div>
-            <div class="footer__copyright">&#169;2024 Bless Maria Gomes</div>    
-        </div>   
-    </footer>
+            <p class="footer__copyright">&#169;2024 Bless Maria Gomes</p>    
+        </footer>
 </div>
 </body>
 </html>
